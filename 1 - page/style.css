@@ -1,0 +1,100 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { height: 100%; font-family: Arial, Helvetica, sans-serif; }
+
+
+#page-wrapper{ 
+	width: 100%; 
+	min-height: 100vh; 
+	background: #f3f4f6; 
+}
+
+
+#header { 
+	background: linear-gradient(90deg, #999999, #CCCCCC);
+	color: #fff; 
+	padding: 24px 20px; 
+	box-shadow: 0 2px 6px rgba(0,0,0,0.15); 
+}
+
+#site-title { 
+	font-size: 28px; 
+	font-weight: 700; 
+}
+
+
+#nav-bar { 
+	background: #ffffff; 
+	padding: 10px 14px; 
+	border-bottom: 4px solid rgba(0,0,0,0.05); 
+}
+
+#nav-bar .nav-link { 
+	display: inline-block; 
+	margin-right: 14px; 
+}
+
+#nav-bar .nav-link a { text-decoration: none; 
+	padding: 8px 12px; 
+	border-radius: 6px; 
+	border: 1px solid transparent; 
+	transition: all 0.15s ease; }
+
+
+#nav-bar .nav-link a:hover { 
+	background: #edf2ff; 
+	color: #2b6cb0; 
+	border-color: rgba(43,108,176,0.15); 
+	transform: translateY(-2px); }
+
+#nav-bar .nav-link a:active { 
+	transform: translateY(0); }
+
+
+
+#content-area { 
+	padding: 18px 20px; }
+
+
+#sidebar { float: left; 
+	width: 220px; 
+	background: #fff; 
+	padding: 14px; 
+	border: 1px solid rgba(0,0,0,0.06); 
+	box-shadow: 0 2px 8px rgba(0,0,0,0.04); 
+	border-radius: 8px; }
+
+#sidebar .sidebar-title { font-weight: 700; margin-bottom: 10px; }
+#sidebar .sidebar-item { padding: 8px 10px; margin-bottom: 8px; border-radius: 6px; cursor: pointer; }
+#sidebar .sidebar-item:hover { background: #f1f5f9; }
+
+
+#main-aside { float: left; width: calc(100% - 260px); margin-left: 20px; background: #ffffff; padding: 18px; border-radius: 8px; border: 1px solid rgba(0,0,0,0.06); box-shadow: 0 4px 12px rgba(0,0,0,0.03); }
+
+
+.aside-heading { font-size: 20px; font-weight: 700; margin-bottom: 8px; }
+.aside-paragraph p { line-height: 1.5; color: #334155; margin-bottom: 12px; }
+
+
+
+.task-block { background: #f8fafc; padding: 12px; margin-bottom: 12px; border-left: 4px solid #4c51bf; border-radius: 6px; }
+.task-heading { font-weight: 700; margin-bottom: 6px; }
+
+
+
+#footer { clear: both; background: #111827; color: #d1d5db; text-align: center; padding: 14px 10px; margin-top: 18px; }
+
+
+
+@media (max-width: 720px) {
+#sidebar { float: none; width: 100%; margin-bottom: 12px; }
+#main-aside { float: none; width: 100%; margin-left: 0; }
+#nav-bar .nav-link { display: block; margin-bottom: 8px; }
+}
+
+
+
+#nav-bar .nav-link a:focus { outline: 3px solid rgba(76,81,191,0.18); }
+
+a{ 
+color: inherit; 
+}
